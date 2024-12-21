@@ -4,30 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="164add5e-5d07-42b7-8154-f6e8229b1048" name="Changes" comment="1">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Laba3_ITMO_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Laba3_ITMO_jar2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_12_2024_17_40_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_12_2024_17_40__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laba3_ITMO.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/characters/Human.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/characters/OlkhovayaChurka.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/characters/Princess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/characters/Sea.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/characters/Snake.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaces/Fightable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaces/UsualMove.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/myException/HealthException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/myWorld/World.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weapons/Weapon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weapons/WeaponType.java" afterDir="false" />
+    <list default="true" id="164add5e-5d07-42b7-8154-f6e8229b1048" name="Changes" comment="strange versions with a lot of mistakes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/characters/OlkhovayaChurka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/OlkhovayaChurka.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/characters/Princess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/Princess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/characters/Snake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/Snake.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +17,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="09ecf0e8-3d81-4fc5-9dc5-414cba583698" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -52,7 +36,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/kladm/ITMO/IntelliJ IDEA JAVA/AlexKarasik",
+    "last_opened_file_path": "C:/Users/kladm/ITMO/IntelliJ IDEA JAVA/java_lab_3",
     "onboarding.tips.debug.path": "C:/Users/kladm/ITMO/IntelliJ IDEA JAVA/JAVA_lab_3/src/Main.java"
   }
 }]]></component>
@@ -88,11 +72,31 @@
       <option name="project" value="LOCAL" />
       <updated>1734706551332</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="strange versions with a lot of mistakes">
+      <option name="closed" value="true" />
+      <created>1734780879541</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1734780879541</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="strange versions with a lot of mistakes" />
+    <option name="LAST_COMMIT_MESSAGE" value="strange versions with a lot of mistakes" />
   </component>
 </project>

@@ -18,14 +18,14 @@ public class OlkhovayaChurka extends Human {
             throw new HealthException("Цель не является бойцом");
         }
         //проверка, жив ли атакующий
-        if (!this.isAlive(f)){
+        if (!this.isAlive(this)){
             throw new HealthException(name +  " не может атаковать, так как он мертв.");
         }
         if (!f.isAlive(f)){
             throw new HealthException(f.toString() + " не может быть атакован, так как он мертв.");
         }
-        if (f instanceof Snake){
-            Snake target = (Snake) f;
+        if (f instanceof Snake target){
+//            Snake target = (Snake) f;
             Random random = new Random();
             int baseDamage = random.nextInt(1, 5);
             int specialDamage = (int) (baseDamage * target.forceCoeff);
@@ -65,14 +65,18 @@ public class OlkhovayaChurka extends Human {
 
     @Override
     public boolean isAlive(Object target) {
+        // Проверка на живость для объектов типа Snake
+        if (target instanceof Snake snake) {
+            return snake.numberOfHeads > 0; // Проверка на живость змеи
+        }
+
+        // Проверка на живость для объектов типа Human (например, для самой Чурки или Принцессы)
         if (target instanceof Human human) {
-            return human.getHealth() > 0; // Проверка на живость для объекта Human
-        } else if (target instanceof Snake snake) {
-            return snake.numberOfHeads > 0; // Проверка на живость для объекта Snake
+            return human.getHealth() > 0; // Проверка на живость человека
         }
 
         // Если тип не поддерживается, выбрасываем исключение
-        throw new IllegalArgumentException("Недопустимый класс: " + target.getClass().getSimpleName());
+        throw new IllegalArgumentException("Недопустимый класс ChurkaisAlive: " + target.getClass().getSimpleName());
     }
 
     public void die(){

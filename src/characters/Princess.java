@@ -64,10 +64,7 @@ public class Princess extends Human{
     public boolean isAlive(Object target) {
         if (target instanceof Human human) {
             return human.getHealth() > 0; // Проверка на живость для объекта Human
-        } else if (target instanceof Snake snake) {
-            return snake.numberOfHeads > 0; // Проверка на живость для объекта Snake
         }
-
         // Если тип не поддерживается, выбрасываем исключение
         throw new IllegalArgumentException("Недопустимый класс: " + target.getClass().getSimpleName());
     }

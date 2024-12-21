@@ -18,14 +18,14 @@ public class Snake implements UsualMove, Fightable {
 
     @Override
     public void fight(Fightable f) throws HealthException {
-        if (!(f instanceof Fightable)){
+        if (!(f instanceof Fightable)) {
             throw new HealthException("Цель не является бойцом");
         }
         //проверка, жив ли атакующий
-        if (!this.isAlive(f)){
-            throw new HealthException(name +  " не может атаковать, так как он мертв.");
+        if (!this.isAlive(f)) {
+            throw new HealthException(name + " не может атаковать, так как он мертв.");
         }
-        if (!f.isAlive(f)){
+        if (!f.isAlive(f)) {
             throw new HealthException(f.toString() + " не может быть атакован, так как он мертв.");
         }
         if (f instanceof Human) {
@@ -36,19 +36,29 @@ public class Snake implements UsualMove, Fightable {
             int specialDamage = (int) (baseDamage * humanTarget.forceCoeff);
             humanTarget.health -= specialDamage;
             System.out.println(name + " жестко жахнула по " + humanTarget.name);
-            if (humanTarget.health <= 0){
+            if (humanTarget.health <= 0) {
                 humanTarget.health = 0;
                 System.out.println(humanTarget.name + " получила " + specialDamage + " урона. Наш бравый боец не справился(");
             } else {
                 System.out.println(humanTarget.name + " получила " + specialDamage + " урона и у него осталось " + humanTarget.health + " HP");
             }
+        }
     }
 
     @Override
     public boolean isAlive(Object target) {
+        // Проверка на живость для объектов типа Snake
+        if (target instanceof Snake snake) {
+            return snake.numberOfHeads > 0; // Проверка на живость змеи
+        }
+
+        // Проверка на живость для объектов типа Human (например, для самой Чурки или Принцессы)
         if (target instanceof Human human) {
-            return human.getHealth() > 0;} // Проверка на живость для переданного объекта Humann
-        throw new IllegalArgumentException("Недопустимый класс"); // Если тип не поддерживается
+            return human.getHealth() > 0; // Проверка на живость человека
+        }
+
+        // Если тип не поддерживается, выбрасываем исключение
+        throw new IllegalArgumentException("Недопустимый класс ChurkaisAlive: " + target.getClass().getSimpleName());
     }
 
 
