@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Laba3_ITMO:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Laba3_ITMO_jar</output-path>
+    <root id="archive" name="Laba3_ITMO.jar">
+      <element id="module-output" name="Laba3_ITMO" />
+    </root>
+  </artifact>
+</component>
