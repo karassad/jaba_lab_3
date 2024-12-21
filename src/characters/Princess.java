@@ -10,35 +10,6 @@ public class Princess extends Human{
         super(name, stuff, health, isSleaping, forceCoeff);
     }
 
-//    @Override
-//    public void fight(Fightable f) throws HealthException{
-//        if (!(f instanceof Fightable)){
-//            throw new HealthException("Цель не является бойцом");
-//        }
-//        //проверка, жив ли атакующий
-//        if (!this.isAlive(f)){
-//            throw new HealthException(name +  " не может атаковать, так как он мертв.");
-//        }
-//        if (!f.isAlive(f)){
-//            throw new HealthException(f.toString() + " не может быть атакован, так как он мертв.");
-//        }
-//        if (f instanceof Snake){
-//            Snake target = (Snake) f;
-//            Random random = new Random();
-//            int baseDamage = random.nextInt(1, 5);
-//            int specialDamage = (int) (baseDamage * target.forceCoeff);
-//            int extraHeads = (int) (specialDamage/2);
-//
-//            target.numberOfHeads -= extraHeads;
-//            System.out.println(name + " тыкнул мечом по врагу");
-//            if (target.numberOfHeads <= 0){
-//                target.numberOfHeads = 0;
-//                System.out.println(target.name + " потерял " + extraHeads + " головы! Враг побежден!");
-//            } else {
-//                System.out.println(target.name + " потерял " + extraHeads + " головы! Чурке нужно отрубить еще " + target.numberOfHeads);
-//            }
-//    }
-
     @Override
     public void fight(Fightable f) throws HealthException {
         if (!(f instanceof Fightable)){
@@ -70,6 +41,7 @@ public class Princess extends Human{
     }
 
     public void die(){
+        alive = false;
         System.out.println(name + " умерла от горя :(");
     }
 
@@ -86,6 +58,7 @@ public class Princess extends Human{
         sb.append("Sleep or not(?): ").append(isSleeping ? "Да" : "Нет").append("\n");
         sb.append("Force coefficient: ").append(forceCoeff).append("\n");
         sb.append("Weapon: ").append(stuff).append("\n");
+        sb.append("Alive: ").append(alive).append("\n");
         return sb.toString();
     }
 

@@ -80,6 +80,7 @@ public class OlkhovayaChurka extends Human {
     }
 
     public void die(){
+        alive = false;
         System.out.println(name + " пал смертью храбрых!");
     }
 
@@ -100,6 +101,7 @@ public class OlkhovayaChurka extends Human {
         sb.append("Sleep or not(?): ").append(isSleeping ? "Да" : "Нет").append("\n");
         sb.append("Force coefficient: ").append(forceCoeff).append("\n");
         sb.append("Weapon: ").append(stuff).append("\n");
+        sb.append("Alive: ").append(alive).append("\n");
         return sb.toString();
     }
 

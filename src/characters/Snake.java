@@ -9,11 +9,13 @@ public class Snake implements UsualMove, Fightable {
     protected String name;
     protected int numberOfHeads;
     protected float forceCoeff;
+    protected boolean alive;
 
     public Snake(String name, int numberOfHeads, float forceCoeff){
         this.name = name;
         this.numberOfHeads = numberOfHeads;
         this.forceCoeff = forceCoeff;
+        this.alive = true;
     }
 
     @Override
@@ -63,6 +65,7 @@ public class Snake implements UsualMove, Fightable {
 
 
     public void die(){
+        alive = false;
         System.out.println(name + " обезголовился :D");
     }
 
@@ -80,9 +83,12 @@ public class Snake implements UsualMove, Fightable {
         sb.append("Snake:\n");
         sb.append("Name: ").append(name).append("\n");
         sb.append("Numbers of head: ").append(numberOfHeads).append("\n");
-        sb.append("Force coefficient: ").append(forceCoeff);
+        sb.append("Force coefficient: ").append(forceCoeff).append("\n");
+        sb.append("Alive: ").append(alive).append("\n");
         return sb.toString();
     }
+
+
 
     public String getName() {
         return name;

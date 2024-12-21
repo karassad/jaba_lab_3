@@ -10,6 +10,7 @@ public abstract class Human implements UsualMove, Fightable{
     protected int health;
     protected boolean isSleeping;
     protected float forceCoeff;
+    protected boolean alive;
 
     public Human(String name, Weapon stuff, int health, boolean isSleaping, float forceCoeff){
         this.name = name;
@@ -17,6 +18,7 @@ public abstract class Human implements UsualMove, Fightable{
         this.health = health;
         this.isSleeping = isSleaping;
         this.forceCoeff = forceCoeff;
+        this.alive = true;
     }
 
 
@@ -59,6 +61,7 @@ public abstract class Human implements UsualMove, Fightable{
                 ", health=" + health +
                 ", isSleeping=" + isSleeping +
                 ", forceCoeff=" + forceCoeff +
+                ", alive=" + alive +
                 '}';
     }
 }
