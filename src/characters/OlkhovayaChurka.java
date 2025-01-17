@@ -40,26 +40,6 @@ public class OlkhovayaChurka extends Human {
                 System.out.println(target.name + " потерял " + extraHeads + " головы! Чурке нужно отрубить еще " + target.numberOfHeads);
             }
         }
-
-
-
-//        if (target.numberOfHeads>0) {
-//            Random random = new Random();
-//            int baseDamage = random.nextInt(1, 5);
-//            int specialDamage = (int) (baseDamage * snakeTarget.forceCoeff);
-//            int extraHeads = (int) (specialDamage/2);
-//
-//            snakeTarget.numberOfHeads -= extraHeads;
-//            System.out.println(name + " тыкнул мечом по врагу");
-//            if (snakeTarget.numberOfHeads <= 0){
-//                snakeTarget.numberOfHeads = 0;
-//                System.out.println(snakeTarget.name + " потерял " + extraHeads + " головы! Враг побежден!");
-//            } else {
-//                System.out.println(snakeTarget.name + " потерял " + extraHeads + " головы! Чурке нужно отрубить еще " + snakeTarget.numberOfHeads);
-//            }
-//        } else {
-//            throw new HealthException(snakeTarget.name + " не может быть атакован, т.к. количество его голов равно " + snakeTarget.numberOfHeads);
-//        }
     }
 
 

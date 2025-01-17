@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Laba3_ITMO:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="164add5e-5d07-42b7-8154-f6e8229b1048" name="Changes" comment="fix problem with isAlive in Churka and Snake">
-      <change beforePath="$PROJECT_DIR$/src/characters/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/Human.java" afterDir="false" />
+    <list default="true" id="164add5e-5d07-42b7-8154-f6e8229b1048" name="Changes" comment="fix to string and add the field &quot;alive&quot;">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/characters/OlkhovayaChurka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/OlkhovayaChurka.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/characters/Princess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/Princess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/characters/Snake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/Snake.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,16 +33,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/kladm/ITMO/IntelliJ IDEA JAVA/java_lab_3",
-    "onboarding.tips.debug.path": "C:/Users/kladm/ITMO/IntelliJ IDEA JAVA/JAVA_lab_3/src/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kladm/ITMO/IntelliJ IDEA JAVA/java_lab_3&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/kladm/ITMO/IntelliJ IDEA JAVA/JAVA_lab_3/src/Main.java&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="JAVA_lab_3" />
@@ -88,7 +91,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734788715284</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix to string and add the field &quot;alive&quot;">
+      <option name="closed" value="true" />
+      <created>1734789511985</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1734789511985</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -106,6 +117,7 @@
     <MESSAGE value="1" />
     <MESSAGE value="strange versions with a lot of mistakes" />
     <MESSAGE value="fix problem with isAlive in Churka and Snake" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix problem with isAlive in Churka and Snake" />
+    <MESSAGE value="fix to string and add the field &quot;alive&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix to string and add the field &quot;alive&quot;" />
   </component>
 </project>
